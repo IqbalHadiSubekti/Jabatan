@@ -1,31 +1,31 @@
-lagi='c'
+lagi="ya"
 
-while lagi=='c':
+while lagi=="ya":
 
     print ("\t \tPerhitungan Gaji Karyawan")
     print ("============================================================")
 
-    nip=input("Masukan No Induk Pegawai \t: ")
+    nip=int(input("Masukan No Induk Pegawai \t: "))
 
-    nama=input("Masukan Nama Pegawai/Staff \t: ")
+    nama=str(input("Masukan Nama Pegawai/Staff \t: "))
 
     print ("1. Direksi \a2. Direktur utama \a3. Direktur \a4. Menejer \a5. Staff Lain")
 
-    jabatan=input("Masukan Jabatan \t\t: ")
+    jabatan=int(input("Masukan Jabatan \t\t: "))
 
-    alamat=input("Masukan Alamat \t\t\t: ")
+    alamat=str(input("Masukan Alamat \t\t\t: "))
 
-    jml_anak=input("Masukan Jumlah Anak \t\t: ")
+    jml_anak=int(input("Masukan Jumlah Anak \t\t: "))
 
-    if (jabatan=="1"):
+    if (jabatan==1):
     	gaji_pokok=10000000
     	jab="Direksi"
 
-    elif(jabatan=="2"):
+    elif(jabatan==2):
     	gaji_pokok=8500000
     	jab="Direktur utama"
 
-    elif(jabatan=="3"):
+    elif(jabatan==3):
     	gaji_pokok=6000000
     	jab="Direktur"
 
@@ -33,17 +33,17 @@ while lagi=='c':
     	gaji_pokok=3000000
     	jab="Staff Lain"
 
-    if(jml_anak>="5"):
+    if(jml_anak >=5):
     	tunjangan=1000000
 
-    elif(jml_anak <="3"):
+    elif(jml_anak <=3):
 
         tunjangan=750000
 
     else:
         tunjangan=500000
 
-    pajak= gaji_pokok *0.15
+    pajak= gaji_pokok*0.15
 
     gaji_bersih= gaji_pokok-pajak+tunjangan
 
@@ -71,4 +71,4 @@ while lagi=='c':
 
     print ("")
 
-    lagi=input("Ambil Data Lagi [c/a]? : ")
+    lagi=input("Ambil Data Lagi [ya/tidak]? : ")
